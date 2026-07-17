@@ -1,13 +1,13 @@
 # Integrated Clinical Systems, Advanced Medical Imaging & Machine Learning Analytics Suite
 
-A multi-disciplinary software workspace integrating diagnostic imaging physics, fluid mechanics, acoustic signal processing, healthcare IT network routing protocols, relational database management, data science, and custom application interface design.
+A multi-disciplinary software workspace integrating diagnostic imaging physics, fluid mechanics, acoustic signal processing, biological wave filtering, healthcare IT network routing protocols, relational database management, data science, and custom application interface design.
 
 All independent modular sub-systems are fully unified, multi-threaded, and executable via a central visual master control deck operator station (`suite_dashboard.py`).
 
 ---
 
 ## 🖥️ Central Systems Control Deck Dashboard (`suite_dashboard.py`)
-An interactive desktop front-end graphical user interface (GUI) engineered using native Tkinter frameworks. This console serves as an operational master station, orchestrating multi-threaded subprocess system bridges to cleanly trigger independent physical models, PACS transmissions, machine learning analytics, acoustic arrays, and live SQL database compliance metrics reports in real-time.
+An interactive desktop front-end graphical user interface (GUI) engineered using native Tkinter frameworks. This console serves as an operational master station, orchestrating multi-threaded subprocess system bridges to cleanly trigger independent physical models, PACS transmissions, machine learning analytics, acoustic arrays, biological filtering, and live SQL database compliance metrics reports in real-time.
 
 ---
 
@@ -67,7 +67,15 @@ An electrical engineering signal processing track designing infinite impulse res
 
 ---
 
-## 🔒 Project 8: Automated DICOM HIPAA Data Privacy Anonymizer (`dicom_anonymizer.py`)
+## 📡 Project 8: Patient Telemetry Wireless RF Interference & Optical PPG Suite (`vital_telemetry_suite.py`)
+A comprehensive dual-discipline module fusing physiological sensor physics with wireless network communications performance modeling.
+
+* **Core Concept:** Applies the **Beer-Lambert Law** of optical absorption across Red ($660\text{nm}$) and Infrared ($940\text{nm}$) spectrum paths to compute blood oxygen saturation ($\text{SpO}_2$) out of synthetic arterial pulse waves. Connects this device data to a network simulation loop modeling random packet-drop margins across high-density hospital wireless access points undergoing severe ambient RF noise congestion.
+* **Systems Impact:** System runs real-time network loss monitoring loops. If network interference spikes past a $15\%$ boundary limit, the software instantly triggers a clinical central monitoring station network safety alert, allowing systems engineers to audit coverage mapping and isolate localized antenna assembly failures from environmental spectrum blocks.
+
+---
+
+## 🔒 Project 9: Automated DICOM HIPAA Data Privacy Anonymizer (`dicom_anonymizer.py`)
 An automated healthcare cyber-security script built to isolate, mask, and re-code identifying metrics out of binary clinical medical studies.
 
 * **Core Concept:** Recursively crawls storage directory paths to parse binary files. Targets specific hexadecimal tags protected under healthcare privacy parameters, including Patient Name `(0010,0010)`, Patient ID `(0010,0020)`, and Birth Date `(0010,0030)`. 
@@ -75,29 +83,7 @@ An automated healthcare cyber-security script built to isolate, mask, and re-cod
 
 ---
 
-## 🗄️ Project 9: Military-Grade Medical Asset CMMS Database Engine (`asset_cmms.py`)
+## 🗄️ Project 10: Military-Grade Medical Asset CMMS Database Engine (`asset_cmms.py`)
 An automated Computerized Maintenance Management System (CMMS) designed to optimize asset lifecycle upkeep, device risk classification, and preventive safety compliance.
 
 * **Core Concept:** Engineered a relational database structure containing two coupled tracking logs: inventory metrics (serial numbers, facility clinics, risk levels) and active maintenance work schedules. Built an automation algorithm that dynamically monitors upcoming safety expiration dates.
-* **Systems Impact:** System parses fleet records in real time, automatically flashes critical clinical maintenance alarms for near-term expiring items, and auto-generates formal 'Pending' preventive maintenance work orders—eliminating scheduling bottlenecks for life-support infrastructure.
-
----
-
-## 🛠️ Local Development & Execution Setup
-To clone this workspace, activate the isolated environment wrapper, and fire up the central application deck on your machine, run the following sequential terminal commands:
-
-```bash
-# Clone the repository
-git clone https://github.com
-cd ct-imaging-simulator
-
-# Initialize and activate your virtual environment wrapper
-python3 -m venv ct_env
-source ct_env/bin/activate
-
-# Install the specialized medical networking, machine learning, and imaging physics libraries
-python3 -m pip install numpy matplotlib scikit-image pydicom pynetdicom pandas scikit-learn scipy
-
-# Launch the master operator dashboard interface
-python3 suite_dashboard.py
-```
