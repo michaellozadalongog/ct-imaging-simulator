@@ -59,7 +59,15 @@ An acoustic signal processing simulation modeling radiofrequency (RF) backscatte
 
 ---
 
-## 🔒 Project 7: Automated DICOM HIPAA Data Privacy Anonymizer (`dicom_anonymizer.py`)
+## 🎛️ Project 7: ECG Electrical Hardware DSP Notch Filter (`ecg_dsp_filter.py`)
+An electrical engineering signal processing track designing infinite impulse response (IIR) filtering systems to clean raw biometric data streams.
+
+* **Core Concept:** Models a native human cardiac rhythm vector (generating synthetic P-QRS-T complex waves) heavily corrupted by an ambient 60Hz wall-power AC electromagnetic interference noise hum ($0.6\text{ mV}$ amplitude distortion). Designs a tight mathematical digital **IIR Notch Filter** ($Q=30$ constraints) combined with a zero-phase forward-backward `filtfilt` process.
+* **Systems Impact:** Successfully isolates and attenuates target power grid noise artifacts while safely preserving critical neighboring diagnostic biometric data coordinates. Outputs a 3-panel wave performance analysis layout, demonstrating clinical hardware diagnostic filtering capabilities crucial for patient monitoring systems.
+
+---
+
+## 🔒 Project 8: Automated DICOM HIPAA Data Privacy Anonymizer (`dicom_anonymizer.py`)
 An automated healthcare cyber-security script built to isolate, mask, and re-code identifying metrics out of binary clinical medical studies.
 
 * **Core Concept:** Recursively crawls storage directory paths to parse binary files. Targets specific hexadecimal tags protected under healthcare privacy parameters, including Patient Name `(0010,0010)`, Patient ID `(0010,0020)`, and Birth Date `(0010,0030)`. 
@@ -67,7 +75,7 @@ An automated healthcare cyber-security script built to isolate, mask, and re-cod
 
 ---
 
-## 🗄️ Project 8: Military-Grade Medical Asset CMMS Database Engine (`asset_cmms.py`)
+## 🗄️ Project 9: Military-Grade Medical Asset CMMS Database Engine (`asset_cmms.py`)
 An automated Computerized Maintenance Management System (CMMS) designed to optimize asset lifecycle upkeep, device risk classification, and preventive safety compliance.
 
 * **Core Concept:** Engineered a relational database structure containing two coupled tracking logs: inventory metrics (serial numbers, facility clinics, risk levels) and active maintenance work schedules. Built an automation algorithm that dynamically monitors upcoming safety expiration dates.
@@ -87,8 +95,8 @@ cd ct-imaging-simulator
 python3 -m venv ct_env
 source ct_env/bin/activate
 
-# Install the specialized medical networking and imaging physics libraries
-python3 -m pip install numpy matplotlib scikit-image pydicom pynetdicom pandas scikit-learn
+# Install the specialized medical networking, machine learning, and imaging physics libraries
+python3 -m pip install numpy matplotlib scikit-image pydicom pynetdicom pandas scikit-learn scipy
 
 # Launch the master operator dashboard interface
 python3 suite_dashboard.py
