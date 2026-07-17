@@ -1,13 +1,13 @@
 # Integrated Clinical Systems, Advanced Medical Imaging & Machine Learning Analytics Suite
 
-A multi-disciplinary software workspace integrating diagnostic imaging physics, fluid mechanics, healthcare IT network routing protocols, relational database management, data science, and custom application interface design.
+A multi-disciplinary software workspace integrating diagnostic imaging physics, fluid mechanics, acoustic signal processing, healthcare IT network routing protocols, relational database management, data science, and custom application interface design.
 
 All independent modular sub-systems are fully unified, multi-threaded, and executable via a central visual master control deck operator station (`suite_dashboard.py`).
 
 ---
 
 ## 🖥️ Central Systems Control Deck Dashboard (`suite_dashboard.py`)
-An interactive desktop front-end graphical user interface (GUI) engineered using native Tkinter frameworks. This console serves as an operational master station, orchestrating multi-threaded subprocess system bridges to cleanly trigger independent physical models, PACS transmissions, machine learning analytics, and live SQL database compliance metrics reports in real-time.
+An interactive desktop front-end graphical user interface (GUI) engineered using native Tkinter frameworks. This console serves as an operational master station, orchestrating multi-threaded subprocess system bridges to cleanly trigger independent physical models, PACS transmissions, machine learning analytics, acoustic arrays, and live SQL database compliance metrics reports in real-time.
 
 ---
 
@@ -51,7 +51,15 @@ A comprehensive mechanical system analysis leveraging fluid physics equations to
 
 ---
 
-## 🔒 Project 6: Automated DICOM HIPAA Data Privacy Anonymizer (`dicom_anonymizer.py`)
+## 🧬 Project 6: Ultrasound Transducer Element Array Failure Analyzer (`ultrasound_sim.py`)
+An acoustic signal processing simulation modeling radiofrequency (RF) backscatter echo profiles across complex multi-channel linear crystal arrays.
+
+* **Core Concept:** Models waveform generation over a 128-element piezoelectric crystal array scanning a tissue structure with variations in density. Simulates structural crystal breakage (hard-faulting channels $45-52$) to track wave attenuation and maps how broken channels distort image arrays through absolute envelope rectification and digital log-compression.
+* **Systems Impact:** Generates a real-time clinical B-mode scan demonstrating a distinct, sharp vertical acoustic dropout shadow artifact. This simulation enables field engineers to immediately verify probe mechanical element degradation, helping teams isolate physical probe crystal damage from internal backend electronics assembly issues.
+
+---
+
+## 🔒 Project 7: Automated DICOM HIPAA Data Privacy Anonymizer (`dicom_anonymizer.py`)
 An automated healthcare cyber-security script built to isolate, mask, and re-code identifying metrics out of binary clinical medical studies.
 
 * **Core Concept:** Recursively crawls storage directory paths to parse binary files. Targets specific hexadecimal tags protected under healthcare privacy parameters, including Patient Name `(0010,0010)`, Patient ID `(0010,0020)`, and Birth Date `(0010,0030)`. 
@@ -59,7 +67,7 @@ An automated healthcare cyber-security script built to isolate, mask, and re-cod
 
 ---
 
-## 🗄️ Project 7: Military-Grade Medical Asset CMMS Database Engine (`asset_cmms.py`)
+## 🗄️ Project 8: Military-Grade Medical Asset CMMS Database Engine (`asset_cmms.py`)
 An automated Computerized Maintenance Management System (CMMS) designed to optimize asset lifecycle upkeep, device risk classification, and preventive safety compliance.
 
 * **Core Concept:** Engineered a relational database structure containing two coupled tracking logs: inventory metrics (serial numbers, facility clinics, risk levels) and active maintenance work schedules. Built an automation algorithm that dynamically monitors upcoming safety expiration dates.
@@ -85,4 +93,3 @@ python3 -m pip install numpy matplotlib scikit-image pydicom pynetdicom pandas s
 # Launch the master operator dashboard interface
 python3 suite_dashboard.py
 ```
-
