@@ -1,6 +1,5 @@
 import os
 import sys
-import sqlite3
 
 def print_header():
     os.system('clear')
@@ -25,6 +24,8 @@ def display_menu():
     print(" [\033[92m11\033[0m] Project 11: Relational Compliance Inventory Scheduling Database Logs")
     print(" [\033[92m12\033[0m] Project 12: SQLite Corporate SaaS Billing Ledger & Invoice Engine")
     print(" [\033[92m13\033[0m] Project 13: Pulse Oximeter PPG Motion Artifact DSP Canceller Engine")
+    print(" [\033[92m14\033[0m] Project 14: Hemodialysis Peristaltic Pump Roller Pressure Model")
+    print(" [\033[92m15\033[0m] Project 15: Gamma Camera Scintillation Crystal Position Matrix Decoder")
     print("----------------------------------------------------------------------")
     print(" [\033[91m0\033[0m]  Exit Operational Control Station")
     print("----------------------------------------------------------------------")
@@ -45,7 +46,7 @@ def main():
     while True:
         print_header()
         display_menu()
-        choice = input("\nEnter target index code selection (0-12): ").strip()
+        choice = input("\nEnter target index code selection (0-15): ").strip()
         
         print("\n\033[94m[⚙️  Executing Selected Architecture Stream... Close any pop-up plots to return]\033[0m\n")
         
@@ -76,6 +77,10 @@ def main():
             os.system("python3 bioforge_billing.py")
         elif choice == '13':
             os.system("python3 ppg_dsp_canceller.py")
+        elif choice == '14':
+            os.system("python3 dialysis_sim.py")
+        elif choice == '15':
+            os.system("python3 gamma_decoding_matrix.py")
         elif choice == '0':
             print("\033[92mSafely disconnecting KapoleiBioForge data links. Goodbye!\033[0m")
             break
