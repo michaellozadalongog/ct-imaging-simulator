@@ -26,6 +26,7 @@ def display_menu():
     print(" [\033[92m13\033[0m] Project 13: Pulse Oximeter PPG Motion Artifact DSP Canceller Engine")
     print(" [\033[92m14\033[0m] Project 14: Hemodialysis Peristaltic Pump Roller Pressure Model")
     print(" [\033[92m15\033[0m] Project 15: Gamma Camera Scintillation Crystal Position Matrix Decoder")
+    print(" [\033[92m16\033[0m] Project 16: Ventilator Proportional Solenoid Valve PID Pneumatic Simulator")
     print("----------------------------------------------------------------------")
     print(" [\033[91m0\033[0m]  Exit Operational Control Station")
     print("----------------------------------------------------------------------")
@@ -46,7 +47,7 @@ def main():
     while True:
         print_header()
         display_menu()
-        choice = input("\nEnter target index code selection (0-15): ").strip()
+        choice = input("\nEnter target index code selection (0-16): ").strip()
         
         print("\n\033[94m[⚙️  Executing Selected Architecture Stream... Close any pop-up plots to return]\033[0m\n")
         
@@ -81,6 +82,8 @@ def main():
             os.system("python3 dialysis_sim.py")
         elif choice == '15':
             os.system("python3 gamma_decoding_matrix.py")
+        elif choice == '16':
+            os.system("python3 ventilator_sim.py")
         elif choice == '0':
             print("\033[92mSafely disconnecting KapoleiBioForge data links. Goodbye!\033[0m")
             break
