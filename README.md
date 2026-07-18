@@ -1,13 +1,13 @@
 # Integrated Clinical Systems, Advanced Medical Imaging & Machine Learning Analytics Suite
 
-A multi-disciplinary software workspace integrating diagnostic imaging physics, fluid mechanics, acoustic signal processing, biological wave filtering, healthcare IT network routing protocols, relational database management, data science, and custom application interface design.
+A multi-disciplinary software workspace integrating diagnostic imaging physics, fluid mechanics, acoustic signal processing, biological wave filtering, nuclear medicine math, healthcare IT network routing protocols, relational database management, data science, and custom application interface design.
 
-All independent modular sub-systems are fully unified, multi-threaded, and executable via a central visual master control deck operator station (`suite_dashboard.py`).
+All independent modular sub-systems are fully unified, multi-threaded, and executable via a central terminal-native master control deck operator station (`suite_dashboard.py`).
 
 ---
 
 ## 🖥️ Central Systems Control Deck Dashboard (`suite_dashboard.py`)
-An interactive desktop front-end graphical user interface (GUI) engineered using native Tkinter frameworks. This console serves as an operational master station, orchestrating multi-threaded subprocess system bridges to cleanly trigger independent physical models, PACS transmissions, machine learning analytics, acoustic arrays, biological filtering, and live SQL database compliance metrics reports in real-time.
+An interactive, terminal-native front-end console framework engineered using Python's standard shell interfaces. This console serves as an operational master station, orchestrating multi-threaded subprocess system bridges to cleanly trigger independent physical models, PACS transmissions, machine learning models, acoustic arrays, biological filtering, fluid dynamics, and live SQL database compliance metrics reports directly within the shell environment with zero phase or windowing lag.
 
 ---
 
@@ -59,7 +59,7 @@ An acoustic signal processing simulation modeling radiofrequency (RF) backscatte
 
 ---
 
-## 🎛️ Project 7: ECG Electrical Hardware DSP Notch Filter (`ecg_dsp_filter.py`)
+## 🗄️ Project 7: ECG Electrical Hardware DSP Notch Filter (`ecg_dsp_filter.py`)
 An electrical engineering signal processing track designing infinite impulse response (IIR) filtering systems to clean raw biometric data streams.
 
 * **Core Concept:** Models a native human cardiac rhythm vector (generating synthetic P-QRS-T complex waves) heavily corrupted by an ambient 60Hz wall-power AC electromagnetic interference noise hum ($0.6\text{ mV}$ amplitude distortion). Designs a tight mathematical digital **IIR Notch Filter** ($Q=30$ constraints) combined with a zero-phase forward-backward `filtfilt` process.
