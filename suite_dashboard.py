@@ -33,6 +33,7 @@ def display_menu():
     print(" [\033[92m20\033[0m] Project 20: Anesthesia Vaporizer Agent Concentration PID Thermal Controller")
     print(" [\033[92m21\033[0m] Project 21: Clinical Immunoassay Robotic Pipette X-Y-Z Gantry Stepper Analyzer")
     print(" [\033[92m22\033[0m] Project 22: AED Biphase Truncated Exponential (BTE) Discharge Waveform Generator")
+    print(" [\033[92m23\033[0m] Project 23: Demand Cardiac Pacemaker Sensing Threshold Loop & Pulse Generator")
     print("----------------------------------------------------------------------")
     print(" [\033[91m0\033[0m]  Exit Operational Control Station")
     print("----------------------------------------------------------------------")
@@ -53,7 +54,7 @@ def main():
     while True:
         print_header()
         display_menu()
-        choice = input("\nEnter target index code selection (0-22): ").strip()
+        choice = input("\nEnter target index code selection (0-23): ").strip()
         
         print("\n\033[94m[⚙️  Executing Selected Architecture Stream... Close any pop-up plots to return]\033[0m\n")
         
@@ -102,6 +103,8 @@ def main():
             os.system("python3 lab_robotics_sim.py")
         elif choice == '22':
             os.system("python3 defib_waveform_sim.py")
+        elif choice == '23':
+            os.system("python3 pacemaker_sim.py")
         elif choice == '0':
             print("\033[92mSafely disconnecting KapoleiBioForge data links. Goodbye!\033[0m")
             break
