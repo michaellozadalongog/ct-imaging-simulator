@@ -28,6 +28,7 @@ def display_menu():
     print(" [\033[92m15\033[0m] Project 15: Gamma Camera Scintillation Crystal Position Matrix Decoder")
     print(" [\033[92m16\033[0m] Project 16: Ventilator Proportional Solenoid Valve PID Pneumatic Simulator")
     print(" [\033[92m17\033[0m] Project 17: Medical Telemetry RF Signal Spectrum Analyzer (SNR Monitor)")
+    print(" [\033[92m18\033[0m] Project 18: Hospital Wi-Fi Medical Device Vulnerability Exploit Scanner")
     print("----------------------------------------------------------------------")
     print(" [\033[91m0\033[0m]  Exit Operational Control Station")
     print("----------------------------------------------------------------------")
@@ -48,7 +49,7 @@ def main():
     while True:
         print_header()
         display_menu()
-        choice = input("\nEnter target index code selection (0-17): ").strip()
+        choice = input("\nEnter target index code selection (0-18): ").strip()
         
         print("\n\033[94m[⚙️  Executing Selected Architecture Stream... Close any pop-up plots to return]\033[0m\n")
         
@@ -87,6 +88,8 @@ def main():
             os.system("python3 ventilator_sim.py")
         elif choice == '17':
             os.system("python3 rf_spectrum_analyzer.py")
+        elif choice == '18':
+            os.system("python3 device_security_scanner.py")
         elif choice == '0':
             print("\033[92mSafely disconnecting KapoleiBioForge data links. Goodbye!\033[0m")
             break
