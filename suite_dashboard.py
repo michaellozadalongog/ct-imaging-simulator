@@ -3,7 +3,6 @@ import sys
 import sqlite3
 
 def print_header():
-    # Production-grade dark terminal banner styling
     os.system('clear')
     print("\033[94m======================================================================")
     print("         🧠 KAPOLEIBIOFORGE MASTER BUSINESS OPERATING STATION 🧠       ")
@@ -25,13 +24,13 @@ def display_menu():
     print(" [\033[92m10\033[0m] Project 10: Secure HIPAA DICOM Hexadecimal Tag Data Anonymizer")
     print(" [\033[92m11\033[0m] Project 11: Relational Compliance Inventory Scheduling Database Logs")
     print(" [\033[92m12\033[0m] Project 12: SQLite Corporate SaaS Billing Ledger & Invoice Engine")
+    print(" [\033[92m13\033[0m] Project 13: Pulse Oximeter PPG Motion Artifact DSP Canceller Engine")
     print("----------------------------------------------------------------------")
     print(" [\033[91m0\033[0m]  Exit Operational Control Station")
     print("----------------------------------------------------------------------")
 
 def main():
     print_header()
-    # Mandatory inline license agreement loop
     print("MANDATORY LEGAL TERMS OF USE & LIABILITY WAIVER:")
     print("This suite is an engineering decision-support tool. All outcomes must be")
     print("physically verified by a certified Biomedical Equipment Technician (BMET).")
@@ -75,6 +74,8 @@ def main():
             os.system("python3 asset_cmms.py")
         elif choice == '12':
             os.system("python3 bioforge_billing.py")
+        elif choice == '13':
+            os.system("python3 ppg_dsp_canceller.py")
         elif choice == '0':
             print("\033[92mSafely disconnecting KapoleiBioForge data links. Goodbye!\033[0m")
             break
@@ -85,4 +86,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
